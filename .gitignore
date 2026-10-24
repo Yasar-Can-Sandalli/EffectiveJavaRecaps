@@ -1,0 +1,22 @@
+# ===== Maven =====
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# ===== IntelliJ IDEA =====
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ===== Derlenmiş dosyalar =====
+*.class
+*.log
+
+# ===== İşletim sistemi =====
+.DS_Store
+Thumbs.db
+
+# ===== Gizli bilgiler (DB şifreleri vb.) =====
+*.env
+db.properties
