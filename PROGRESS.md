@@ -1,4 +1,4 @@
-# İlerleme Takibi
+#  İlerleme Takibi
 
 > Durum: ⬜ Başlamadı · 🟡 Devam ediyor · ✅ Tamamlandı (teori + pratik + test + review + onay)
 >
@@ -9,20 +9,25 @@
 
 ## Seviye Tespiti
 
-| # | Konu | Sonuç | Not |
-|---|---|---|---|
-| 1 | Autoboxing / Integer cache | — | |
-| 2 | equals & hashCode | — | |
-| 3 | Autoboxing performansı | — | |
-| 4 | Generics & wildcard | — | |
-| 5 | Stream laziness | — | |
-| 6 | Lambda & effectively final | — | |
-| 7 | Utility class tasarımı | — | |
-| 8 | Immutability | — | |
-| 9 | try / finally | — | |
-| 10 | Dependency Injection & test edilebilirlik | — | |
+| # | Konu | Sonuç | Not | Kapanacağı Madde |
+|---|---|---|---|---|
+| 1 | Autoboxing / Integer cache | ✅ | Doğru cevap, neden bilinmiyor (Integer cache, `==` referans karşılaştırır) | 6, 61 |
+| 2 | equals & hashCode | ❌ | equals mantığı doğru okundu; HashSet'in önce hashCode'a baktığı bilinmiyor | 10, 11 |
+| 3 | Autoboxing performansı | ❌ | Derleme/çalışma hatası beklendi; asıl sorun her turda yeni `Long` nesnesi | 6 |
+| 4 | Generics & wildcard | ❌ | Generics'in invariant olması ve `? extends` ile ekleme yapılamaması bilinmiyor | 28, 31 |
+| 5 | Stream laziness | ❌ | Terminal operasyon olmadan stream'in çalışmadığı bilinmiyor | 45, 46 |
+| 6 | Lambda & effectively final | ❌ | Bilinmiyor | 42 |
+| 7 | Utility class tasarımı | ❌ | Bilinmiyor | 4 |
+| 8 | Immutability | ❌ | `final` alan = immutable sanılıyor; referans sızıntısı bilinmiyor | 17, 50 |
+| 9 | try / finally | ❌ | Hata beklendi; `finally` içindeki return'ün öncekini ezdiği bilinmiyor | 9, 77 |
+| 10 | Dependency Injection & test edilebilirlik | 🟡 | "SMTP'ye bağımlılık" sezgisi doğru yönde, kavram ve test etkisi eksik | 5 |
 
-**Genel değerlendirme:** _Test sonrası doldurulacak._
+**Genel değerlendirme:** Söz dizimi biliniyor; eksik olan "kaputun altı" modeli. Özellikle şu ayrımlar oturmamış:
+- **Derleme hatası mı, çalışma zamanı mı, hiç hata yok mu?** (Soru 3, 4, 9)
+- **Referans mı, değer mi?** (`==`, `final` referans, sızan liste — Soru 1, 2, 8)
+- **Kod ne zaman çalışır?** (stream laziness, lambda yakalama — Soru 5, 6)
+
+Bu tablonun tamamı kitabın kapsadığı konular. Her madde bitince ilgili satır yeniden test edilecek.
 
 ---
 
@@ -199,4 +204,4 @@
 
 | Tarih | Madde | Not |
 |---|---|---|
-| 2026-10-24 | — | Repo kuruldu, seviye testi yapıldı |
+| 2026-10-24 | — | Repo kuruldu, GitHub'a ilk push yapıldı, seviye testi yapıldı |
