@@ -39,23 +39,24 @@ Bu tablonun tamamı kitabın kapsadığı konular. Her madde bitince ilgili sat�
 | Dependency Injection | 5 | ⬜ |
 | Autoboxing / Unboxing | 6, 61 | ⬜ |
 | equals & hashCode | 10, 11 | ⬜ |
+| `==` vs `equals` vs `compareTo` | 1 (mini deney), 10, 14 | 🟡 BigDecimal deneyiyle oturdu, Item 10'da pekişecek |
 | Generics | 26–33 | ⬜ |
 | EnumSet / EnumMap | 36, 37 | ⬜ |
 | Lambda | 42–44 | ⬜ |
 | Stream | 45–48 | ⬜ |
 | HashSet / Collection seçimi | 64 | ⬜ |
 | JUnit 5 / Test yazma | Her madde | ⬜ |
-| Git (ileri seviye) | Her madde | ⬜ |
+| Git (ileri seviye) | Her madde | 🟡 init, remote, push, branch (`switch -c`), conventional commits |
 
 ---
 
-## Maddeler
+##  Maddeler
 
 ### Bölüm 2 — Nesne Oluşturma ve Yok Etme (`chapter02_objects`)
 
 | # | Madde | Türkçe Özet | Udemy | Durum |
 |---|---|---|---|---|
-| 1 | Consider static factory methods instead of constructors | Constructor yerine static factory metotları düşün | 4 | ⬜ |
+| 1 | Consider static factory methods instead of constructors | Constructor yerine static factory metotları düşün | 4 | 🟡 |
 | 2 | Consider a builder when faced with many constructor parameters | Çok parametrede Builder kullan | 5 | ⬜ |
 | 3 | Enforce the singleton property with a private constructor or an enum type | Singleton'ı private constructor veya enum ile garanti et | 6 | ⬜ |
 | 4 | Enforce noninstantiability with a private constructor | Örneklenemezliği private constructor ile sağla | 7 | ⬜ |
@@ -205,3 +206,4 @@ Bu tablonun tamamı kitabın kapsadığı konular. Her madde bitince ilgili sat�
 | Tarih | Madde | Not |
 |---|---|---|
 | 2026-10-24 | — | Repo kuruldu, GitHub'a ilk push yapıldı, seviye testi yapıldı |
+| 2026-10-25 | 1 | Teori + `solution` paketi (Discount) yazıldı, code review düzeltmeleri yapıldı, 7 kavrama sorusu, `==`/`equals`/`compareTo` deneyi. Sırada: Udemy 4 → `book` → `practice` + ilk JUnit testi |
