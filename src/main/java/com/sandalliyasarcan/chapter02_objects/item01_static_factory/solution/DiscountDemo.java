@@ -15,6 +15,7 @@ public class DiscountDemo {
         Discount coupon = Discount.fixedAmount(new BigDecimal("50.00")); // 50 TL indirim kuponu olusturuduk olsuturduk
 
 
+
         System.out.println(Discount.none() == Discount.none()); //Ayni nesne olgunu fark edin , calistirinca true yazacak buyuk ihtimalle
 
 
@@ -28,6 +29,8 @@ public class DiscountDemo {
         System.out.println(studentDiscount.apply(price));
         System.out.println(coupon.apply(price));
         System.out.println(Discount.none().apply(price));
+
+        System.out.println(BigDecimal.valueOf(10.00).equals(BigDecimal.valueOf(10.0)));
 
 
 

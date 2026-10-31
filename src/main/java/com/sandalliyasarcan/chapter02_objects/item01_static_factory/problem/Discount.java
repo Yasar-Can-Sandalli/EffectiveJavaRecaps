@@ -1,6 +1,7 @@
 package com.sandalliyasarcan.chapter02_objects.item01_static_factory.problem;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Discount {
 
@@ -43,7 +44,7 @@ public class Discount {
     //Urun 1000 lira olsun | indirim degeride 15
     public BigDecimal apply(BigDecimal price){
         if (percentage){
-            BigDecimal reduction = price.multiply(value).divide(BigDecimal.valueOf(100));
+            BigDecimal reduction = price.multiply(value).divide(BigDecimal.valueOf(100) , 2 , RoundingMode.HALF_UP);
             return price.subtract(reduction);
         }
 
